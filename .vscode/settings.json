@@ -4,13 +4,13 @@
         {
             "format": "expanded",
             "extensionName": ".css",
-            "savePath": "../assets/css"
+            "savePath": "/assets/css"
         },
 
         {
             "format": "compressed",
-            "extension": ".min.css",
-            "savePath": "../assets/css"
+            "extensionName": ".min.css",
+            "savePath": "/assets/css"
         }
     ],    
         "liveSassCompile.settings.generateMap":false
