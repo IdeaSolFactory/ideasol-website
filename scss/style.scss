@@ -8,6 +8,7 @@
 06. Footer
 07. Utilities
 08. Responsive
+09. Custom rules
 --------------------------------------------------- */
 
 @import "variables";
@@ -35,7 +36,7 @@
 @import "components/post";
 @import "components/page";
 @import "components/sidebar";
-
+//
 /* 06. Footer
 --------------------------------------------------- */
 @import "components/footer";
@@ -47,3 +48,7 @@
 /* 08. Responsive
 --------------------------------------------------- */
 @import "responsive";
+
+/* 09. CUSTOM RULES
+--------------------------------------------------- */
+@import "custom";
