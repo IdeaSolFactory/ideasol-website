@@ -17,35 +17,82 @@
 
 
 /* REFERENCE LOGOS SECTION */
-#pr__clients__logos{
+#competencies-section{
+    width: 100%;
+    padding: 45px 0;
 
-    .item{
-        &.logo{
-            height: 120px;
-            width: 120px;
-            .inner{
-                img{
-                    display: block;
-                    width: 65px;
-                    height: auto;
-                    margin: 0 auto;
-                    filter: grayscale(1);
+    .splide{
+        // overflow: hidden;
+        // padding: 0 12px;
+
+        .splide__track{
+            .splide__list{
+                // display: flex;
+                // flex-direction: row;
+                // justify-content: flex-start;
+                // align-items: center;
+                // height: 120px;
+
+                .splide__slide{
+                    list-style: none;
+                    width: 145px;
+                    height: auto;    
+                    text-align: center;
                     opacity: .65;
-                    transition: all .3s ease-in-out;
-                }
-
-                &:hover{
-                    img{
+                    filter: grayscale(1);
+                    transition: filter .3s ease-in-out, opacity .3s ease-in-out;
+                    
+                    &:hover{
                         filter: grayscale(0);
                         opacity: 1;
                     }
-                }
 
-                p{
-                    margin-top: 8px;
-                    margin-bottom: 0;
+                    img{
+                        display: block;
+                        width: auto;
+                        height: auto;
+                        max-height: 65px;
+                        max-width: 65px;
+                        margin: 0 auto;
+
+                    }
                 }
             }
         }
     }
 }
+
+
+// OLD
+// #pr__clients__logos{
+
+//     .item{
+//         &.logo{
+//             height: 120px;
+//             width: 120px;
+//             .inner{
+//                 img{
+//                     display: block;
+//                     width: 65px;
+//                     height: auto;
+//                     margin: 0 auto;
+//                     filter: grayscale(1);
+//                     opacity: .65;
+//                     transition: all .3s ease-in-out;
+//                 }
+
+//                 &:hover{
+//                     img{
+//                         filter: grayscale(0);
+//                         opacity: 1;
+//                     }
+//                 }
+
+//                 p{
+//                     margin-top: 8px;
+//                     margin-bottom: 0;
+//                 }
+//             }
+//         }
+//     }
+// }

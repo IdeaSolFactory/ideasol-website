@@ -2708,30 +2708,36 @@ a.uk-slidenav > * {
 }
 
 /* REFERENCE LOGOS SECTION */
-#pr__clients__logos .item.logo {
-  height: 120px;
-  width: 120px;
+#competencies-section {
+  width: 100%;
+  padding: 45px 0;
 }
 
-#pr__clients__logos .item.logo .inner img {
-  display: block;
-  width: 65px;
+#competencies-section .splide .splide__track .splide__list .splide__slide {
+  list-style: none;
+  width: 145px;
   height: auto;
-  margin: 0 auto;
+  text-align: center;
+  opacity: .65;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
-  opacity: .65;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: opacity .3s ease-in-out, -webkit-filter .3s ease-in-out;
+  transition: opacity .3s ease-in-out, -webkit-filter .3s ease-in-out;
+  transition: filter .3s ease-in-out, opacity .3s ease-in-out;
+  transition: filter .3s ease-in-out, opacity .3s ease-in-out, -webkit-filter .3s ease-in-out;
 }
 
-#pr__clients__logos .item.logo .inner:hover img {
+#competencies-section .splide .splide__track .splide__list .splide__slide:hover {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
   opacity: 1;
 }
 
-#pr__clients__logos .item.logo .inner p {
-  margin-top: 8px;
-  margin-bottom: 0;
+#competencies-section .splide .splide__track .splide__list .splide__slide img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-height: 65px;
+  max-width: 65px;
+  margin: 0 auto;
 }
