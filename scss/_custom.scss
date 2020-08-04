@@ -14,3 +14,21 @@
 
     }
 }
+
+
+/* REFERENCE LOGOS SECTION */
+#pr__clients__logos{
+
+    .item{
+        &.logo{
+            height: 65px;
+            width: 65px;
+            .inner{
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

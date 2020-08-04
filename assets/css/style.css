@@ -2706,3 +2706,14 @@ a.uk-slidenav > * {
   background-position: 85% 30%;
   background-size: 765px;
 }
+
+/* REFERENCE LOGOS SECTION */
+#pr__clients__logos .item.logo {
+  height: 65px;
+  width: 65px;
+}
+
+#pr__clients__logos .item.logo .inner img {
+  width: 100%;
+  height: auto;
+}
