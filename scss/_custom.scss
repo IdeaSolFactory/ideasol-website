@@ -21,12 +21,29 @@
 
     .item{
         &.logo{
-            height: 65px;
-            width: 65px;
+            height: 120px;
+            width: 120px;
             .inner{
                 img{
-                    width: 100%;
+                    display: block;
+                    width: 65px;
                     height: auto;
+                    margin: 0 auto;
+                    filter: grayscale(1);
+                    opacity: .65;
+                    transition: all .3s ease-in-out;
+                }
+
+                &:hover{
+                    img{
+                        filter: grayscale(0);
+                        opacity: 1;
+                    }
+                }
+
+                p{
+                    margin-top: 8px;
+                    margin-bottom: 0;
                 }
             }
         }
