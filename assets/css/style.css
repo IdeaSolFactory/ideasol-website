@@ -2695,19 +2695,7 @@ a.uk-slidenav > * {
 
 /* 09. CUSTOM RULES
 --------------------------------------------------- */
-<<<<<<< HEAD
 /*display modifiers*/
 .hidden {
   display: none !important;
-}
-
-#pr__clients__logos {
-  display: none;
-=======
-/*HERO SECTION*/
-#site-wrapper #site-hero {
-  background-image: url(../images/hero_01.png);
-  background-position: 85% 30%;
-  background-size: 765px;
->>>>>>> origin/develop
 }
