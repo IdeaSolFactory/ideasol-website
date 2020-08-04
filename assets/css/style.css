@@ -2700,10 +2700,6 @@ a.uk-slidenav > * {
   display: none !important;
 }
 
-#pr__clients__logos {
-  display: none;
-}
-
 /*HERO SECTION*/
 #site-wrapper #site-hero {
   background-image: url(../images/hero_01.png);
