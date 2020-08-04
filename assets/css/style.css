@@ -2713,6 +2713,14 @@ a.uk-slidenav > * {
   padding: 45px 0;
 }
 
+#competencies-section .section-heading {
+  margin-bottom: 60px;
+}
+
+#competencies-section .section-heading .title {
+  margin: 20px 0 0;
+}
+
 #competencies-section .splide .splide__track .splide__list .splide__slide {
   list-style: none;
   width: 145px;
