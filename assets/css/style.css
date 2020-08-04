@@ -2707,6 +2707,18 @@ a.uk-slidenav > * {
   background-size: 765px;
 }
 
+#site-wrapper .pr__hero__wrap .logo {
+  width: 420px;
+}
+
+#site-wrapper .pr__hero__wrap .logo .brand {
+  width: 100%;
+  height: 65px;
+  background-image: url(../images/brand/ISF-weblogo-black-txt-572x56.svg);
+  background-size: contain;
+  background-position: center;
+}
+
 /* REFERENCE LOGOS SECTION */
 #competencies-section {
   width: 100%;
