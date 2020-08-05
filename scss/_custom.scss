@@ -135,6 +135,10 @@
 
         .service-box{  
 
+            .link{
+                pointer-events: none;
+            }
+
             .title{
                 visibility: visible;
                 top: initial;

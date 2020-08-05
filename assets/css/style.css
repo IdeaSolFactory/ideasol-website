@@ -2844,6 +2844,10 @@ a.uk-slidenav > * {
 }
 
 /* SERVICES SECTION */
+#pr__services .services-boxes .service-box .link {
+  pointer-events: none;
+}
+
 #pr__services .services-boxes .service-box .title {
   visibility: visible;
   top: initial;
