@@ -133,5 +133,20 @@ jQuery(document).ready(function ($) {
          });
      }
 
+      // Splide slider options
+    // ------------------------------------------------------
+    new Splide( '.splide',{
+        type: "loop",
+        perPage: 6,
+        perMove: 3,
+        easing: "ease",
+        speed: 800,
+        pagination: false,
+        arrows: false,
+        autoWidth: true,
+        accessibility: false,
+        autoplay: true,
+        width: "100%"
+    } ).mount();
 
 });
