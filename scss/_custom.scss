@@ -3,6 +3,16 @@
     display: none !important;
 }
 
+/* TEXT */
+
+.title{
+    font-size: 24px;
+
+    @include mq-screen-large{
+        font-size: initial;
+    }
+}
+
 /*HERO SECTION*/
 
 #site-wrapper{

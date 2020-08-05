@@ -2700,6 +2700,17 @@ a.uk-slidenav > * {
   display: none !important;
 }
 
+/* TEXT */
+.title {
+  font-size: 24px;
+}
+
+@media (min-width: 1280px) {
+  .title {
+    font-size: initial;
+  }
+}
+
 /*HERO SECTION*/
 #site-wrapper #site-hero {
   background-image: none;
