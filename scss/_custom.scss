@@ -125,7 +125,24 @@
                     }
                 }
             }           
-        }       
+        }  
+        
+        
+        // pr hero
+        #pr__hero{
+            .title{
+
+                font-size: 40px;
+
+                @include mq-tablet{
+                    font-size: 65px;
+                }
+
+                @include mq-screen-large{
+                    font-size: 80px;
+                }
+            }
+        }
     }
 }
 

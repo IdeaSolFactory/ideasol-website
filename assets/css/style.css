@@ -2843,6 +2843,22 @@ a.uk-slidenav > * {
   }
 }
 
+#site-wrapper .pr__hero__wrap #pr__hero .title {
+  font-size: 40px;
+}
+
+@media (min-width: 768px) {
+  #site-wrapper .pr__hero__wrap #pr__hero .title {
+    font-size: 65px;
+  }
+}
+
+@media (min-width: 1280px) {
+  #site-wrapper .pr__hero__wrap #pr__hero .title {
+    font-size: 80px;
+  }
+}
+
 /* SERVICES SECTION */
 #pr__services .services-boxes .service-box .link {
   pointer-events: none;
