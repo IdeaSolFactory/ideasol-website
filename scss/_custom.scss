@@ -5,13 +5,20 @@
 
 /* TEXT */
 
-.title{
-    font-size: 24px;
+.section-heading{
+    .title{
+        font-size: 24px;
 
-    @include mq-screen-large{
-        font-size: initial;
+        @include mq-screen-small{
+            font-size: 48px;
+        }
+    
+        @include mq-screen-large{
+            // font-size: initial;
+        }
     }
 }
+
 
 /*HERO SECTION*/
 

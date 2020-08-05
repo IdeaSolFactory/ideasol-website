@@ -2701,13 +2701,13 @@ a.uk-slidenav > * {
 }
 
 /* TEXT */
-.title {
+.section-heading .title {
   font-size: 24px;
 }
 
-@media (min-width: 1280px) {
-  .title {
-    font-size: initial;
+@media (min-width: 991px) {
+  .section-heading .title {
+    font-size: 48px;
   }
 }
 
