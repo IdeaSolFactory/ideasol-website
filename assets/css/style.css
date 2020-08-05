@@ -2781,6 +2781,48 @@ a.uk-slidenav > * {
   }
 }
 
+/* SERVICES SECTION */
+#pr__services .services-boxes .service-box .title {
+  visibility: visible;
+  top: initial;
+  -webkit-transition: top .2s ease-in-out, visibility .2s ease-in-out, opacity .2s ease-in-out;
+  transition: top .2s ease-in-out, visibility .2s ease-in-out, opacity .2s ease-in-out;
+}
+
+#pr__services .services-boxes .service-box .service-box__description {
+  position: absolute;
+  bottom: 0;
+  left: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-right: 85px;
+  color: white;
+  display: block;
+  opacity: 0;
+  width: 100%;
+  line-height: 110%;
+  visibility: hidden;
+  -webkit-transition: bottom .3s ease-in-out;
+  transition: bottom .3s ease-in-out;
+}
+
+#pr__services .services-boxes .service-box:hover .title {
+  top: -150px;
+  visibility: hidden;
+  opacity: 0;
+  color: initial;
+}
+
+#pr__services .services-boxes .service-box:hover .service-box__description {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  bottom: 50%;
+  visibility: visible;
+  opacity: 1;
+}
+
 /* CLIENT TESTIMONIALS SECTION */
 #pr__clients .splide-clients .description {
   font-size: 19px;

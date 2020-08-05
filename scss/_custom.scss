@@ -80,6 +80,54 @@
     }
 }
 
+/* SERVICES SECTION */
+#pr__services{
+    .services-boxes{
+
+        .service-box{  
+
+            .title{
+                visibility: visible;
+                top: initial;
+                transition: top .2s ease-in-out, visibility .2s ease-in-out, opacity .2s ease-in-out;
+            }
+
+            .service-box__description{
+                position: absolute;
+                bottom: 0;
+                left: 60px;
+                box-sizing: border-box;
+                padding-right: 85px;
+                color: white;
+                display: block;
+                opacity: 0;
+                width: 100%;
+                line-height: 110%;
+                visibility: hidden;
+                transition: bottom .3s ease-in-out;
+            }
+
+            &:hover{
+                .title{
+                    top: -150px;
+                    visibility: hidden;
+                    opacity: 0;
+                    color: initial;
+                    // display: none;
+                }
+
+                .service-box__description{   
+                    box-sizing: border-box;
+                    transform: translateY(50%); 
+                    bottom: 50%;      
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
 /* CLIENT TESTIMONIALS SECTION */
 #pr__clients{
     .splide-clients{
