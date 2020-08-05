@@ -137,15 +137,15 @@ jQuery(document).ready(function ($) {
     // ------------------------------------------------------
     new Splide( '.splide',{
         type: "loop",
-        perPage: 6,
         perMove: 3,
+        perPage: 6,
         easing: "ease",
-        speed: 800,
+        speed: 900,
         pagination: false,
         arrows: false,
-        autoWidth: true,
         accessibility: false,
         autoplay: true,
+        gap: 15,
         width: "100%"
     } ).mount();
 
