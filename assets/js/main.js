@@ -157,7 +157,9 @@ jQuery(document).ready(function ($) {
         pagination: false,
         arrows: false,
         autoplay: true,
-        width: "100%"
+        width: "100%",
+        pauseOnHover: true,
+        pauseOnFocus: true
     }).mount();
 
 });
