@@ -2702,7 +2702,7 @@ a.uk-slidenav > * {
 
 /*HERO SECTION*/
 #site-wrapper #site-hero {
-  background-image: url(../images/hero_01.png);
+  background-image: none;
   background-position: 185% 10%;
   background-size: 400px;
 }
@@ -2735,6 +2735,7 @@ a.uk-slidenav > * {
 
 @media (min-width: 1280px) {
   #site-wrapper #site-hero {
+    background-image: url(../images/hero_01.png);
     background-size: 765px;
     background-position: 92% 35%;
   }

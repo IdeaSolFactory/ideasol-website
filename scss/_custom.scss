@@ -8,7 +8,7 @@
 #site-wrapper{
 
     #site-hero{
-        background-image: url(../images/hero_01.png);
+        background-image: none;
         background-position: 185% 10%;
         background-size: 400px;
         // overflow-x: hidden;
@@ -36,7 +36,9 @@
             }
         }
 
-        @include mq-screen-large{            
+        @include mq-screen-large{ 
+            background-image: url(../images/hero_01.png);
+           
             background-size: 765px;
             background-position: 92% 35%;           
         }
