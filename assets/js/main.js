@@ -5,9 +5,9 @@ jQuery(document).ready(function ($) {
     // ------------------------------------------------------
     $(window).on('load', function () {
         anime.timeline({
-                targets: '.preloader',
-                easing: 'easeOutExpo',
-            })
+            targets: '.preloader',
+            easing: 'easeOutExpo',
+        })
             .add({
                 height: ['100vh', '0vh'],
                 duration: 700,
@@ -27,8 +27,8 @@ jQuery(document).ready(function ($) {
             })
 
         anime.timeline({
-                easing: 'easeOutExpo',
-            })
+            easing: 'easeOutExpo',
+        })
             .add({
                 targets: '.preloader .txt',
                 delay: 100,
@@ -102,51 +102,69 @@ jQuery(document).ready(function ($) {
     // Contact Form Validate JS
     // ------------------------------------------------------
 
-     if ($('.pr__contact').length) {
-         $('.pr__contact').validate({ // Initialize the plugin
-             rules: {
-                 name: {
-                     required: true
-                 },
-                 email: {
-                     required: true,
-                     email: true
-                 },
-                 subject: {
-                     required: true
-                 },
-                 message: {
-                     required: true
-                 }
-             },
-             submitHandler: function (form) {
-                 // Sending values with ajax request
-                 $.post($(form).attr('action'), $(form).serialize(), function (response) {
-                     $(form).parent('div').append(response);
-                     $(form).find('input[type="text"]').val('');
-                     $(form).find('input[type="email"]').val('');
-                     $(form).find('select').val('');
-                     $(form).find('textarea').val('');
-                 });
-                 return false;
-             }
-         });
-     }
+    if ($('.pr__contact').length) {
+        $('.pr__contact').validate({ // Initialize the plugin
+            rules: {
+                name: {
+                    required: true
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                subject: {
+                    required: true
+                },
+                message: {
+                    required: true
+                }
+            },
+            submitHandler: function (form) {
+                // Sending values with ajax request
+                $.post($(form).attr('action'), $(form).serialize(), function (response) {
+                    $(form).parent('div').append(response);
+                    $(form).find('input[type="text"]').val('');
+                    $(form).find('input[type="email"]').val('');
+                    $(form).find('select').val('');
+                    $(form).find('textarea').val('');
+                });
+                return false;
+            }
+        });
+    }
 
-      // Splide slider options
+    // Splide slider options
     // ------------------------------------------------------
-    new Splide( '.splide',{
+    new Splide('.splide-logos', {
         type: "loop",
-        perPage: 6,
         perMove: 3,
+        perPage: 6,
         easing: "ease",
-        speed: 800,
+        speed: 900,
         pagination: false,
         arrows: false,
-        autoWidth: true,
         accessibility: false,
         autoplay: true,
-        width: "100%"
-    } ).mount();
+        gap: 15,
+        width: "100%",
+        breakpoints:{
+            640:{
+                perPage: 3
+            }
+        }
+    }).mount();
+
+    new Splide('.splide-clients', {
+        type: "loop",
+        perPage: 1,
+        easing: "ease",
+        speed: 650,
+        pagination: false,
+        arrows: false,
+        autoplay: true,
+        width: "100%",
+        pauseOnHover: true,
+        pauseOnFocus: true
+    }).mount();
 
 });
