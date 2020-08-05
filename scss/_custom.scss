@@ -80,6 +80,15 @@
     }
 }
 
+/* CLIENT TESTIMONIALS SECTION */
+#pr__clients{
+    .splide-clients{
+        .description{
+            font-size: 19px;
+        }
+    }
+}
+
 
 /* REFERENCE LOGOS SECTION */
 #competencies-section{
@@ -94,7 +103,7 @@
         }
     }
 
-    .splide{
+    .splide-logos{
         // overflow: hidden;
         // padding: 0 12px;
 

@@ -2781,6 +2781,11 @@ a.uk-slidenav > * {
   }
 }
 
+/* CLIENT TESTIMONIALS SECTION */
+#pr__clients .splide-clients .description {
+  font-size: 19px;
+}
+
 /* REFERENCE LOGOS SECTION */
 #competencies-section {
   width: 100%;
@@ -2795,7 +2800,7 @@ a.uk-slidenav > * {
   margin: 20px 0 0;
 }
 
-#competencies-section .splide .splide__track .splide__list .splide__slide {
+#competencies-section .splide-logos .splide__track .splide__list .splide__slide {
   list-style: none;
   width: 145px;
   height: auto;
@@ -2809,13 +2814,13 @@ a.uk-slidenav > * {
   transition: filter .3s ease-in-out, opacity .3s ease-in-out, -webkit-filter .3s ease-in-out;
 }
 
-#competencies-section .splide .splide__track .splide__list .splide__slide:hover {
+#competencies-section .splide-logos .splide__track .splide__list .splide__slide:hover {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
   opacity: 1;
 }
 
-#competencies-section .splide .splide__track .splide__list .splide__slide img {
+#competencies-section .splide-logos .splide__track .splide__list .splide__slide img {
   display: block;
   width: auto;
   height: auto;

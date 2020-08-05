@@ -135,7 +135,7 @@ jQuery(document).ready(function ($) {
 
       // Splide slider options
     // ------------------------------------------------------
-    new Splide( '.splide',{
+    new Splide( '.splide-logos',{
         type: "loop",
         perMove: 3,
         perPage: 6,
@@ -146,7 +146,18 @@ jQuery(document).ready(function ($) {
         accessibility: false,
         autoplay: true,
         gap: 15,
+        width: "100%"} 
+        ).mount();
+
+    new Splide('.splide-clients',{
+        type:"loop",
+        perPage: 1,
+        easing: "ease",
+        speed: 650,
+        pagination: false,
+        arrows: false,
+        autoplay: true,
         width: "100%"
-    } ).mount();
+    }).mount();
 
 });
