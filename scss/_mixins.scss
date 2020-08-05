@@ -1,3 +1,57 @@
+// Media Queries
+
+
+@mixin mq-mobile-small{
+    @media (min-width: map-get($breakpoint-sm, min-width)){
+        @content;
+    }
+}
+
+@mixin mq-mobile-medium{
+    @media (min-width: map-get($breakpoint-mm, max-width)){
+        @content;
+    }
+}
+
+@mixin mq-tablet{
+    @media (min-width: map-get($breakpoint-tablet, min-width)){
+        @content;
+    }
+}
+
+@mixin mq-screen-small{
+    @media (min-width: map-get($breakpoint-sscr, min-width)){
+        @content;
+    }
+}
+
+@mixin mq-screen-medium{
+    @media (min-width: map-get($breakpoint-mscr, min-width)){
+        @content;
+    }
+}
+
+@mixin mq-screen-large{
+    @media (min-width: map-get($breakpoint-lscr, min-width)){
+        @content;
+    }
+}
+
+
+@mixin mq-screen-xl{
+    @media (min-width: map-get($breakpoint-xlscr, min-width)){
+        @content;
+    }
+}
+
+@mixin mq-screen-hd{
+    @media (max-width: map-get($breakpoint-hd, min-width)){
+        @content;
+    }
+}
+
+
+
 // Links
 @mixin color($color, $hover) {
     color: $color;
