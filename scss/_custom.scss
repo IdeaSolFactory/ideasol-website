@@ -47,35 +47,72 @@
         .pr__header{
             position: relative;
 
-            &:after{
-                content: "";
+            .logo-container{
                 position: absolute;
-                display: block;
+                width: 320px;
                 left: 0;
                 top: 50%;
-                transform: translateY(-50%);
-                height: 40px;
-                width: 300px;
+                height: 45px;
+                transform: translateY(-50%);    
+                margin: 0;
+                padding: 0;
 
-                background-image: url(../images/brand/ISF-weblogo-black-txt-572x56.svg);
-                background-repeat: no-repeat;
-                background-position: left center;
-                background-size: contain;
-                transition: width .5s ease-in-out;
+                @include mq-mobile-medium{
+                    height: 55px;
+                    width: 400px;
+                }
 
                 @include mq-tablet{
-                    width: 360px;                    
+                    width: 420px;
                 }
 
                 @include mq-screen-small{
-                    width: 380px;
+                    width: 650px;
+                    height: 60px;
                 }
 
                 @include mq-screen-large{
-                    width: 550px;
+                    width: 800px;
                     height: 65px;
                 }
-            }
+
+                @include mq-screen-xl{
+                    width: 800px;
+                    height: 65px;
+                }
+
+                &::before{
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+
+                    background-image: url(../images/brand/ISF-weblogo-black-txt-800x56.svg);
+                    background-position: -120px center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+
+                    @include mq-mobile-medium{
+                        background-position: -160px center;
+                    }
+
+                    @include mq-tablet{
+                        background-position: -150px center;
+                    }
+
+                    @include mq-screen-small{
+                        background-position: -250px center;
+                    }
+
+                    @include mq-screen-large{
+                        background-position: -200px center;
+                    }
+
+                    @include mq-screen-xl{
+                        background-position: -80px center;
+                    }
+                }
+            }           
         }       
     }
 }
