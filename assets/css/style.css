@@ -2959,14 +2959,56 @@ a.uk-slidenav > * {
 }
 
 /* FOOTER */
-#site-footer .pr__social .inner {
+#site-footer .uk-section-large {
+  padding-top: 105px;
+  padding-bottom: 105px;
+}
+
+@media (min-width: 1280px) {
+  #site-footer .uk-section-large .columns {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  #site-footer .uk-section-large .columns .column {
+    width: 33.33%;
+    padding: 0;
+  }
+}
+
+#site-footer .uk-section-large .columns .column .title {
+  text-align: center;
+}
+
+#site-footer .uk-section-large .columns .column.contact-column {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+@media (min-width: 959px) {
+  #site-footer .uk-section-large .columns .column.contact-column {
+    -webkit-box-ordinal-group: unset;
+        -ms-flex-order: unset;
+            order: unset;
+  }
+}
+
+@media (min-width: 1280px) {
+  #site-footer .uk-section-large .columns .column.contact-button .inner {
+    text-align: right;
+  }
+}
+
+#site-footer .uk-section-large .pr__social .inner {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-#site-footer .pr__social .inner .social__item {
+#site-footer .uk-section-large .pr__social .inner .social__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2975,28 +3017,10 @@ a.uk-slidenav > * {
           align-items: center;
 }
 
-#site-footer .pr__social .inner .social__item:not(:first-of-type) {
+#site-footer .uk-section-large .pr__social .inner .social__item:not(:first-of-type) {
   margin-top: 12px;
 }
 
-#site-footer .pr__social .inner .social__item span {
+#site-footer .uk-section-large .pr__social .inner .social__item span {
   padding-left: 8px;
-}
-
-@media (min-width: 768px) {
-  #site-footer .pr__social .inner {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  #site-footer .pr__social .inner .social__item {
-    padding-right: 30px;
-  }
-  #site-footer .pr__social .inner .social__item:last-of-type {
-    padding-right: 0;
-  }
-  #site-footer .pr__social .inner .social__item:not(:first-of-type) {
-    margin-top: 0;
-  }
 }

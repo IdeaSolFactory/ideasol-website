@@ -273,41 +273,68 @@
 
 /* FOOTER */
 #site-footer {
-    .pr__social {
 
-        .inner {
-            flex-direction: column;
+    .uk-section-large{
+        padding-top: 105px;
+        padding-bottom: 105px;
 
-            .social__item {
-                display: flex;
-                align-items: center;               
+        .columns{
 
-                &:not(:first-of-type){
-                    margin-top: 12px;
-                }
-
-                span {
-                    padding-left: 8px;
-                }
+            @include mq-screen-large{
+                margin: 0;
             }
 
-            @include mq-tablet{
-                flex-direction: row;
+            .column{
+              
+                @include mq-screen-large{
+                    width: 33.33%;
+                    padding: 0;
+                }
 
-                .social__item{
-                    padding-right: 30px;
+                .title{
+                    text-align: center;
+                }  
+                
+                &.contact-column{
+                    order: 3;
 
-                    &:last-of-type{
-                        padding-right: 0;
-                    }
+                   @include mq-tablet-medium {
+                       order: unset;
+                   }
+                }
 
-                    &:not(:first-of-type){
-                        margin-top: 0;
+                &.contact-button{                   
+
+                    .inner{
+                        @include mq-screen-large{
+                            text-align: right;
+                        }
+                      
                     }
                 }
             }
         }
-    }
+
+        .pr__social {
+
+            .inner {
+                flex-direction: column;
+    
+                .social__item {
+                    display: flex;
+                    align-items: center;               
+    
+                    &:not(:first-of-type){
+                        margin-top: 12px;
+                    }
+    
+                    span {
+                        padding-left: 8px;
+                    }
+                }            
+            }
+        }
+    }    
 }
 
 // OLD
