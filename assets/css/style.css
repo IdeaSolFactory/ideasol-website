@@ -2889,8 +2889,20 @@ a.uk-slidenav > * {
           transform: translateX(-50%) translateY(-50%);
   width: 200px;
   opacity: 1;
+  -webkit-filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.25));
   -webkit-transition: opacity .15s ease-in-out;
   transition: opacity .15s ease-in-out;
+}
+
+#pr__works .works-boxes .work-box .inner span a {
+  display: block;
+  color: white;
+  font-weight: bold;
+  height: 32px;
+  width: 100%;
+  font-size: 24px;
+  margin-top: 12px;
 }
 
 #pr__works .works-boxes .work-box .image--bckgrnd {
@@ -2901,8 +2913,8 @@ a.uk-slidenav > * {
   width: 100%;
   height: 100%;
   z-index: -10;
-  -webkit-filter: blur(5px) grayscale(1);
-          filter: blur(5px) grayscale(1);
+  -webkit-filter: blur(2px) grayscale(1);
+          filter: blur(2px) grayscale(1);
 }
 
 #pr__works .works-boxes .work-box.work--helpitgo .image {
@@ -2915,6 +2927,10 @@ a.uk-slidenav > * {
 
 #pr__works .works-boxes .work-box.work--kisfaludy .image {
   background-color: #232323;
+}
+
+#pr__works .works-boxes .work-box.work--ivs .image {
+  background-color: #F3732A;
 }
 
 /* CLIENT TESTIMONIALS SECTION */
