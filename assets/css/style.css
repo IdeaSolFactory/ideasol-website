@@ -2938,6 +2938,16 @@ a.uk-slidenav > * {
   font-size: 19px;
 }
 
+#pr__clients .client-image {
+  display: none;
+}
+
+@media (min-width: 959px) {
+  #pr__clients .client-image {
+    display: block;
+  }
+}
+
 /* REFERENCE LOGOS SECTION */
 #competencies-section {
   width: 100%;

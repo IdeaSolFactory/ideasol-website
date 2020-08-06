@@ -266,6 +266,14 @@
             font-size: 19px;
         }
     }
+
+    .client-image{
+        display: none;
+
+        @include mq-tablet-medium{
+            display: block;
+        }
+    }
 }
 
 /* REFERENCE LOGOS SECTION */
