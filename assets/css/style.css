@@ -2861,6 +2861,62 @@ a.uk-slidenav > * {
   opacity: 1;
 }
 
+/* REFERENCES SECTION */
+#pr__works .works-boxes .work-box:hover .image {
+  background-color: transparent !important;
+}
+
+#pr__works .works-boxes .work-box:hover .image img {
+  opacity: 0;
+}
+
+#pr__works .works-boxes .work-box:hover .image--bckgrnd {
+  opacity: .45;
+}
+
+#pr__works .works-boxes .work-box .image {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  position: relative;
+}
+
+#pr__works .works-boxes .work-box .image > img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  width: 200px;
+  opacity: 1;
+  -webkit-transition: opacity .15s ease-in-out;
+  transition: opacity .15s ease-in-out;
+}
+
+#pr__works .works-boxes .work-box .image--bckgrnd {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  -webkit-filter: blur(5px) grayscale(1);
+          filter: blur(5px) grayscale(1);
+}
+
+#pr__works .works-boxes .work-box.work--helpitgo .image {
+  background-color: #ed0454;
+}
+
+#pr__works .works-boxes .work-box.work--santaroza .image {
+  background-color: #000;
+}
+
+#pr__works .works-boxes .work-box.work--kisfaludy .image {
+  background-color: #232323;
+}
+
 /* CLIENT TESTIMONIALS SECTION */
 #pr__clients .splide-clients .description {
   font-size: 19px;
