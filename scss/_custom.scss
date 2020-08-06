@@ -51,9 +51,20 @@
             }
         }
 
-        @include mq-screen-large {
+        @include mq-screen-medium{
             background-image: url(../images/hero_01.png);
 
+            background-size: 600px;
+            background-position: 110% 30%;
+        }
+
+        @include mq-screen-large {          
+
+            background-size: 765px;
+            background-position: 115% 35%;
+        }
+
+        @include mq-screen-xl{
             background-size: 765px;
             background-position: 92% 35%;
         }

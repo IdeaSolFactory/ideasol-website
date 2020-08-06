@@ -2744,9 +2744,23 @@ a.uk-slidenav > * {
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   #site-wrapper #site-hero {
     background-image: url(../images/hero_01.png);
+    background-size: 600px;
+    background-position: 110% 30%;
+  }
+}
+
+@media (min-width: 1280px) {
+  #site-wrapper #site-hero {
+    background-size: 765px;
+    background-position: 115% 35%;
+  }
+}
+
+@media (min-width: 1680px) {
+  #site-wrapper #site-hero {
     background-size: 765px;
     background-position: 92% 35%;
   }
