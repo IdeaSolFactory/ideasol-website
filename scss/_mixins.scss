@@ -19,6 +19,12 @@
     }
 }
 
+@mixin mq-tablet-medium{
+    @media (min-width: map-get($breakpoint-tablet-medium, min-width)){
+        @content;
+    }
+}
+
 @mixin mq-screen-small{
     @media (min-width: map-get($breakpoint-sscr, min-width)){
         @content;

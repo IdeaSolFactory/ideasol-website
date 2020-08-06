@@ -74,7 +74,7 @@
                 padding: 0;
 
                 @include mq-mobile-medium {
-                    height: 55px;
+                    height: 50px;
                     width: 400px;
                 }
 
@@ -84,17 +84,15 @@
 
                 @include mq-screen-small {
                     width: 650px;
-                    height: 60px;
+                    height: 42px;
                 }
 
                 @include mq-screen-large {
                     width: 800px;
-                    height: 65px;
                 }
 
                 @include mq-screen-xl {
                     width: 800px;
-                    height: 65px;
                 }
 
                 &::before {
@@ -121,11 +119,11 @@
                     }
 
                     @include mq-screen-large {
-                        background-position: -200px center;
+                        background-position: -65px center;
                     }
 
                     @include mq-screen-xl {
-                        background-position: -80px center;
+                        background-position: 0 center;
                     }
                 }
             }
@@ -152,9 +150,10 @@
 #pr_features {
     .features-boxes {
         .feature-box {
+
             .link {
                 pointer-events: none;
-            }
+            }            
         }
     }
 }
@@ -273,36 +272,57 @@
 
 /* FOOTER */
 #site-footer {
-    .pr__social {
+    .uk-section-large {
+        padding-top: 105px;
+        padding-bottom: 105px;
 
-        .inner {
-            flex-direction: column;
-
-            .social__item {
-                display: flex;
-                align-items: center;               
-
-                &:not(:first-of-type){
-                    margin-top: 12px;
-                }
-
-                span {
-                    padding-left: 8px;
-                }
+        .columns {
+            @include mq-screen-large {
+                margin: 0;
             }
 
-            @include mq-tablet{
-                flex-direction: row;
+            .column {
+                @include mq-screen-large {
+                    width: 33.33%;
+                    padding: 0;
+                }
 
-                .social__item{
-                    padding-right: 30px;
+                .title {
+                    text-align: center;
+                }
 
-                    &:last-of-type{
-                        padding-right: 0;
+                &.contact-column {
+                    order: 3;
+
+                    @include mq-tablet-medium {
+                        order: unset;
+                    }
+                }
+
+                &.contact-button {
+                    .inner {
+                        @include mq-screen-large {
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }
+
+        .pr__social {
+            .inner {
+                flex-direction: column;
+
+                .social__item {
+                    display: flex;
+                    align-items: center;
+
+                    &:not(:first-of-type) {
+                        margin-top: 12px;
                     }
 
-                    &:not(:first-of-type){
-                        margin-top: 0;
+                    span {
+                        padding-left: 8px;
                     }
                 }
             }
