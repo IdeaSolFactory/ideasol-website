@@ -74,7 +74,7 @@
                 padding: 0;
 
                 @include mq-mobile-medium {
-                    height: 55px;
+                    height: 50px;
                     width: 400px;
                 }
 
@@ -84,17 +84,15 @@
 
                 @include mq-screen-small {
                     width: 650px;
-                    height: 60px;
+                    height: 42px;
                 }
 
                 @include mq-screen-large {
                     width: 800px;
-                    height: 65px;
                 }
 
                 @include mq-screen-xl {
                     width: 800px;
-                    height: 65px;
                 }
 
                 &::before {
@@ -121,11 +119,11 @@
                     }
 
                     @include mq-screen-large {
-                        background-position: -200px center;
+                        background-position: -65px center;
                     }
 
                     @include mq-screen-xl {
-                        background-position: -80px center;
+                        background-position: 0 center;
                     }
                 }
             }

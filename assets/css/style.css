@@ -2770,7 +2770,7 @@ a.uk-slidenav > * {
 
 @media (min-width: 567px) {
   #site-wrapper .pr__hero__wrap .pr__header .logo-container {
-    height: 55px;
+    height: 50px;
     width: 400px;
   }
 }
@@ -2784,21 +2784,19 @@ a.uk-slidenav > * {
 @media (min-width: 991px) {
   #site-wrapper .pr__hero__wrap .pr__header .logo-container {
     width: 650px;
-    height: 60px;
+    height: 42px;
   }
 }
 
 @media (min-width: 1280px) {
   #site-wrapper .pr__hero__wrap .pr__header .logo-container {
     width: 800px;
-    height: 65px;
   }
 }
 
 @media (min-width: 1680px) {
   #site-wrapper .pr__hero__wrap .pr__header .logo-container {
     width: 800px;
-    height: 65px;
   }
 }
 
@@ -2833,13 +2831,13 @@ a.uk-slidenav > * {
 
 @media (min-width: 1280px) {
   #site-wrapper .pr__hero__wrap .pr__header .logo-container::before {
-    background-position: -200px center;
+    background-position: -65px center;
   }
 }
 
 @media (min-width: 1680px) {
   #site-wrapper .pr__hero__wrap .pr__header .logo-container::before {
-    background-position: -80px center;
+    background-position: 0 center;
   }
 }
 
