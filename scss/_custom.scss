@@ -150,9 +150,10 @@
 #pr_features {
     .features-boxes {
         .feature-box {
+
             .link {
                 pointer-events: none;
-            }
+            }            
         }
     }
 }
@@ -271,68 +272,62 @@
 
 /* FOOTER */
 #site-footer {
-
-    .uk-section-large{
+    .uk-section-large {
         padding-top: 105px;
         padding-bottom: 105px;
 
-        .columns{
-
-            @include mq-screen-large{
+        .columns {
+            @include mq-screen-large {
                 margin: 0;
             }
 
-            .column{
-              
-                @include mq-screen-large{
+            .column {
+                @include mq-screen-large {
                     width: 33.33%;
                     padding: 0;
                 }
 
-                .title{
+                .title {
                     text-align: center;
-                }  
-                
-                &.contact-column{
-                    order: 3;
-
-                   @include mq-tablet-medium {
-                       order: unset;
-                   }
                 }
 
-                &.contact-button{                   
+                &.contact-column {
+                    order: 3;
 
-                    .inner{
-                        @include mq-screen-large{
+                    @include mq-tablet-medium {
+                        order: unset;
+                    }
+                }
+
+                &.contact-button {
+                    .inner {
+                        @include mq-screen-large {
                             text-align: right;
                         }
-                      
                     }
                 }
             }
         }
 
         .pr__social {
-
             .inner {
                 flex-direction: column;
-    
+
                 .social__item {
                     display: flex;
-                    align-items: center;               
-    
-                    &:not(:first-of-type){
+                    align-items: center;
+
+                    &:not(:first-of-type) {
                         margin-top: 12px;
                     }
-    
+
                     span {
                         padding-left: 8px;
                     }
-                }            
+                }
             }
         }
-    }    
+    }
 }
 
 // OLD
