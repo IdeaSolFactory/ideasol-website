@@ -2744,9 +2744,23 @@ a.uk-slidenav > * {
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   #site-wrapper #site-hero {
     background-image: url(../images/hero_01.png);
+    background-size: 600px;
+    background-position: 110% 30%;
+  }
+}
+
+@media (min-width: 1280px) {
+  #site-wrapper #site-hero {
+    background-size: 765px;
+    background-position: 115% 35%;
+  }
+}
+
+@media (min-width: 1680px) {
+  #site-wrapper #site-hero {
     background-size: 765px;
     background-position: 92% 35%;
   }
@@ -2845,6 +2859,62 @@ a.uk-slidenav > * {
   bottom: 50%;
   visibility: visible;
   opacity: 1;
+}
+
+/* REFERENCES SECTION */
+#pr__works .works-boxes .work-box:hover .image {
+  background-color: transparent !important;
+}
+
+#pr__works .works-boxes .work-box:hover .image img {
+  opacity: 0;
+}
+
+#pr__works .works-boxes .work-box:hover .image--bckgrnd {
+  opacity: .45;
+}
+
+#pr__works .works-boxes .work-box .image {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  position: relative;
+}
+
+#pr__works .works-boxes .work-box .image > img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  width: 200px;
+  opacity: 1;
+  -webkit-transition: opacity .15s ease-in-out;
+  transition: opacity .15s ease-in-out;
+}
+
+#pr__works .works-boxes .work-box .image--bckgrnd {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  -webkit-filter: blur(5px) grayscale(1);
+          filter: blur(5px) grayscale(1);
+}
+
+#pr__works .works-boxes .work-box.work--helpitgo .image {
+  background-color: #ed0454;
+}
+
+#pr__works .works-boxes .work-box.work--santaroza .image {
+  background-color: #000;
+}
+
+#pr__works .works-boxes .work-box.work--kisfaludy .image {
+  background-color: #232323;
 }
 
 /* CLIENT TESTIMONIALS SECTION */
