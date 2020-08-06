@@ -153,6 +153,18 @@
     }
 }
 
+/* FEATURES SECTION */
+#pr_features{
+    .features-boxes{
+        .feature-box{
+            .link{
+                pointer-events: none;
+            }
+        }
+    }
+
+}
+
 /* SERVICES SECTION */
 #pr__services{
     .services-boxes{
