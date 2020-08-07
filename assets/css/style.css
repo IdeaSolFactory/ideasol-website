@@ -2872,7 +2872,7 @@ a.uk-slidenav > * {
 
 #pr__works .works-boxes .work-box .image {
   position: relative;
-  background: radial-gradient(circle, #838385 0%, #29292c 165%);
+  background: #4f4f52;
 }
 
 #pr__works .works-boxes .work-box .image > img {
