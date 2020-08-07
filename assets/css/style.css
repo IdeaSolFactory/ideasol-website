@@ -2862,12 +2862,32 @@ a.uk-slidenav > * {
 }
 
 /* REFERENCES SECTION */
+#pr__works .works-boxes .work-box:hover .outer,
+#pr__works .works-boxes .work-box:hover .inner {
+  background-color: transparent;
+}
+
+#pr__works .works-boxes .work-box:hover .outer {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
 #pr__works .works-boxes .work-box:hover .image {
   background-color: transparent !important;
 }
 
 #pr__works .works-boxes .work-box:hover .image img {
   opacity: 0;
+}
+
+#pr__works .works-boxes .work-box:hover .image--bckgrnd img {
+  opacity: 1;
+}
+
+#pr__works .works-boxes .work-box:hover .image--bckgrnd::after {
+  height: 100%;
+  -webkit-transition: height .4s ease-in-out;
+  transition: height .4s ease-in-out;
 }
 
 #pr__works .works-boxes .work-box .image {
@@ -2886,18 +2906,24 @@ a.uk-slidenav > * {
   opacity: 1;
   -webkit-filter: drop-shadow(0px 0px 8px rgba(29, 29, 31, 0.65));
           filter: drop-shadow(0px 0px 8px rgba(29, 29, 31, 0.65));
-  -webkit-transition: opacity .15s ease-in-out;
-  transition: opacity .15s ease-in-out;
+  -webkit-transition: opacity .8s ease-in-out;
+  transition: opacity .8s ease-in-out;
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
 }
 
-#pr__works .works-boxes .work-box .inner span a {
-  display: block;
-  color: white;
+#pr__works .works-boxes .work-box .inner .image--bckgrnd {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+
+#pr__works .works-boxes .work-box .inner h3, #pr__works .works-boxes .work-box .inner p {
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.65);
+}
+
+#pr__works .works-boxes .work-box .inner .category--soon {
   font-weight: bold;
-  height: 32px;
-  width: 100%;
-  font-size: 24px;
-  margin-top: 12px;
+  font-size: 1.2em;
 }
 
 #pr__works .works-boxes .work-box .image--bckgrnd {
@@ -2908,16 +2934,9 @@ a.uk-slidenav > * {
   width: 100%;
   height: 100%;
   z-index: -10;
-  -webkit-filter: blur(2px) grayscale(0);
-          filter: blur(2px) grayscale(0);
 }
 
-#pr__works .works-boxes .work-box .image--bckgrnd > img {
-  -webkit-filter: grayscale(1);
-          filter: grayscale(1);
-}
-
-#pr__works .works-boxes .work-box.work--helpitgo .image--bckgrnd::after {
+#pr__works .works-boxes .work-box .image--bckgrnd::before {
   content: "";
   position: absolute;
   display: block;
@@ -2925,8 +2944,47 @@ a.uk-slidenav > * {
   left: 0;
   width: 100%;
   height: 100%;
+  opacity: 1;
+  background-color: black;
+}
+
+#pr__works .works-boxes .work-box .image--bckgrnd::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0px;
+  -webkit-transition: height .8s ease-in-out;
+  transition: height .8s ease-in-out;
+  opacity: .75;
+}
+
+#pr__works .works-boxes .work-box .image--bckgrnd > img {
+  -webkit-filter: blur(2px) grayscale(100%) contrast(50%);
+          filter: blur(2px) grayscale(100%) contrast(50%);
+  -webkit-transition: .8s ease-in-out;
+  transition: .8s ease-in-out;
+  opacity: 0;
+  -webkit-transition-delay: none;
+          transition-delay: none;
+}
+
+#pr__works .works-boxes .work-box.work--helpitgo .image--bckgrnd::after {
   background-color: #ed0454;
-  opacity: .65;
+}
+
+#pr__works .works-boxes .work-box.work--santaroza .image--bckgrnd::after {
+  background-color: #BF382B;
+}
+
+#pr__works .works-boxes .work-box.work--kisfaludy .image--bckgrnd::after {
+  background-color: #EECF3B;
+}
+
+#pr__works .works-boxes .work-box.work--ivs .image--bckgrnd::after {
+  background-color: #F3732A;
 }
 
 /* CLIENT TESTIMONIALS SECTION */
