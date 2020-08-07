@@ -1,151 +1,111 @@
 /*display modifiers*/
-.hidden{
+.hidden {
     display: none !important;
 }
 
 /* TEXT */
 
-.section-heading{
-    .title{
+.section-heading {
+    .title {
         font-size: 24px;
 
-        @include mq-screen-small{
+        @include mq-screen-small {
             font-size: 48px;
         }
-    
-        @include mq-screen-large{
+
+        @include mq-screen-large {
             // font-size: initial;
         }
     }
 }
 
-
 /*HERO SECTION*/
 
-#site-wrapper{
-
-    #site-hero{
+#site-wrapper {
+    #site-hero {
         background-image: none;
         background-position: 185% 10%;
         background-size: 400px;
         // overflow-x: hidden;
 
-        &::before{
+        &::before {
             content: "";
             width: 100%;
             height: 100%;
             position: absolute;
             top: 0;
             left: 0;
-            background-color: rgba($color: #FFF, $alpha: .45);
+            background-color: rgba($color: #fff, $alpha: 0.45);
         }
 
-        @include mq-mobile-medium{
+        @include mq-mobile-medium {
             background-size: 600px;
             background-position: 120% 10%;
         }
 
-        @include mq-tablet{
+        @include mq-tablet {
             background-position: 100% 30%;
 
-            &::before{
+            &::before {
                 background-color: transparent;
             }
         }
 
-        @include mq-screen-large{ 
+        @include mq-screen-medium{
             background-image: url(../images/hero_01.png);
-           
+
+            background-size: 600px;
+            background-position: 110% 30%;
+        }
+
+        @include mq-screen-large {          
+
             background-size: 765px;
-            background-position: 92% 35%;           
+            background-position: 115% 35%;
+        }
+
+        @include mq-screen-xl{
+            background-size: 765px;
+            background-position: 92% 35%;
         }
     }
 
-    .pr__hero__wrap{
-
-        .pr__header{
+    .pr__hero__wrap {
+        .pr__header {
             position: relative;
 
-            .logo-container{
-                position: absolute;
-                width: 320px;
-                left: 0;
-                top: 50%;
-                height: 45px;
-                transform: translateY(-50%);    
-                margin: 0;
-                padding: 0;
+            .logo{
+                background-image: url(../images/brand/ISF-weblogo-black-txt-572x56.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
 
-                @include mq-mobile-medium{
-                    height: 55px;
-                    width: 400px;
-                }
+                width: 250px;
 
                 @include mq-tablet{
-                    width: 420px;
-                }
-
-                @include mq-screen-small{
-                    width: 650px;
-                    height: 60px;
+                    background-position: -10px center;
+                    width: 250px;
+                    height: 50px;
                 }
 
                 @include mq-screen-large{
-                    width: 800px;
-                    height: 65px;
-                }
-
-                @include mq-screen-xl{
-                    width: 800px;
-                    height: 65px;
-                }
-
-                &::before{
-                    content: "";
-                    width: 100%;
-                    height: 100%;
-                    display: block;
-
-                    background-image: url(../images/brand/ISF-weblogo-black-txt-800x56.svg);
-                    background-position: -120px center;
-                    background-size: contain;
-                    background-repeat: no-repeat;
-
-                    @include mq-mobile-medium{
-                        background-position: -160px center;
-                    }
-
-                    @include mq-tablet{
-                        background-position: -150px center;
-                    }
-
-                    @include mq-screen-small{
-                        background-position: -250px center;
-                    }
-
-                    @include mq-screen-large{
-                        background-position: -200px center;
-                    }
-
-                    @include mq-screen-xl{
-                        background-position: -80px center;
-                    }
+                    background-position: -30px center;
+                    width: 300px;
+                    height: 60px;
                 }
             }           
-        }  
-        
-        
-        // pr hero
-        #pr__hero{
-            .title{
+        }
 
+        // pr hero
+        #pr__hero {
+            .title {
                 font-size: 40px;
 
-                @include mq-tablet{
+                @include mq-tablet {
                     font-size: 65px;
                 }
 
-                @include mq-screen-large{
+                @include mq-screen-large {
                     font-size: 80px;
                 }
             }
@@ -153,23 +113,33 @@
     }
 }
 
+/* FEATURES SECTION */
+#pr_features {
+    .features-boxes {
+        .feature-box {
+
+            .link {
+                pointer-events: none;
+            }            
+        }
+    }
+}
+
 /* SERVICES SECTION */
-#pr__services{
-    .services-boxes{
-
-        .service-box{  
-
-            .link{
+#pr__services {
+    .services-boxes {
+        .service-box {
+            .link {
                 pointer-events: none;
             }
 
-            .title{
+            .title {
                 visibility: visible;
                 top: initial;
-                transition: top .2s ease-in-out, visibility .2s ease-in-out, opacity .2s ease-in-out;
+                transition: top 0.2s ease-in-out, visibility 0.2s ease-in-out, opacity 0.2s ease-in-out;
             }
 
-            .service-box__description{
+            .service-box__description {
                 position: absolute;
                 bottom: 0;
                 left: 60px;
@@ -181,11 +151,11 @@
                 width: 100%;
                 line-height: 110%;
                 visibility: hidden;
-                transition: bottom .3s ease-in-out;
+                transition: bottom 0.3s ease-in-out;
             }
 
-            &:hover{
-                .title{
+            &:hover {
+                .title {
                     top: -150px;
                     visibility: hidden;
                     opacity: 0;
@@ -193,10 +163,10 @@
                     // display: none;
                 }
 
-                .service-box__description{   
+                .service-box__description {
                     box-sizing: border-box;
-                    transform: translateY(50%); 
-                    bottom: 50%;      
+                    transform: translateY(50%);
+                    bottom: 50%;
                     visibility: visible;
                     opacity: 1;
                 }
@@ -205,22 +175,113 @@
     }
 }
 
-/* CLIENT TESTIMONIALS SECTION */
-#pr__clients{
-    .splide-clients{
-        .description{
-            font-size: 19px;
+/* REFERENCES SECTION */
+#pr__works{
+    .works-boxes{
+
+        .work-box{
+
+            &:hover{
+                .image{
+                    background-color: transparent !important;
+                    
+                    img{
+                        opacity: 0;
+                    }
+                }
+                
+                .image--bckgrnd{
+                    opacity: .45;
+                }
+            }
+
+            .image{
+                filter: grayscale(0);
+                position: relative;
+
+                >img{
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translateX(-50%) translateY(-50%);
+                    width: 200px;
+                    opacity: 1;
+                    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, .25));
+                    transition: opacity .15s ease-in-out;
+                }
+            }
+
+            .inner{
+                span{
+                    a{
+                        display: block;
+                        color: white;
+                        font-weight: bold;
+                        height: 32px;
+                        width: 100%;
+                        font-size: 24px;
+                        margin-top: 12px;
+                    }
+                }
+            }
+
+            .image--bckgrnd{
+                display: block;                
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -10;
+                filter: blur(2px) grayscale(1);
+            }
+            &.work--helpitgo{
+                .image{
+                    background-color: #ed0454;
+                }
+            }
+
+            &.work--santaroza{
+                .image{
+                    background-color: #000;
+                }
+            }
+
+            &.work--kisfaludy .image{
+                background-color: #232323;
+            }
+
+            &.work--ivs .image{
+                background-color: #F3732A;
+            }
         }
     }
 }
 
+/* CLIENT TESTIMONIALS SECTION */
+#pr__clients {
+    .splide-clients {
+        .description {
+            font-size: 19px;
+        }
+    }
+
+    .client-image{
+        display: none;
+
+        @include mq-tablet-medium{
+            display: block;
+        }
+    }
+}
 
 /* REFERENCE LOGOS SECTION */
-#competencies-section{
+#competencies-section {
     width: 100%;
     padding: 45px 0;
 
-    .section-heading{
+    .section-heading {
         margin-bottom: 60px;
 
         .title {
@@ -228,40 +289,39 @@
         }
     }
 
-    .splide-logos{
+    .splide-logos {
         // overflow: hidden;
         // padding: 0 12px;
 
-        .splide__track{
-            .splide__list{
+        .splide__track {
+            .splide__list {
                 // display: flex;
                 // flex-direction: row;
                 // justify-content: flex-start;
                 // align-items: center;
                 // height: 120px;
 
-                .splide__slide{
+                .splide__slide {
                     list-style: none;
                     width: 145px;
-                    height: auto;    
+                    height: auto;
                     text-align: center;
-                    opacity: .65;
+                    opacity: 0.65;
                     filter: grayscale(1);
-                    transition: filter .3s ease-in-out, opacity .3s ease-in-out;
-                    
-                    &:hover{
+                    transition: filter 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
+                    &:hover {
                         filter: grayscale(0);
                         opacity: 1;
                     }
 
-                    img{
+                    img {
                         display: block;
                         width: auto;
                         height: auto;
                         max-height: 65px;
                         max-width: 65px;
                         margin: 0 auto;
-
                     }
                 }
             }
@@ -269,6 +329,66 @@
     }
 }
 
+/* FOOTER */
+#site-footer {
+    .uk-section-large {
+        padding-top: 105px;
+        padding-bottom: 105px;
+
+        .columns {
+            @include mq-screen-large {
+                margin: 0;
+            }
+
+            .column {
+                @include mq-screen-large {
+                    width: 33.33%;
+                    padding: 0;
+                }
+
+                .title {
+                    text-align: center;
+                }
+
+                &.contact-column {
+                    order: 3;
+
+                    @include mq-tablet-medium {
+                        order: unset;
+                    }
+                }
+
+                &.contact-button {
+                    .inner {
+                        @include mq-screen-large {
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }
+
+        .pr__social {
+            .inner {
+                flex-direction: column;
+
+                .social__item {
+                    display: flex;
+                    align-items: center;
+
+                    &:not(:first-of-type) {
+                        margin-top: 12px;
+                    }
+
+                    span {
+                        padding-left: 8px;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
 
 // OLD
 // #pr__clients__logos{

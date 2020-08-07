@@ -2744,9 +2744,23 @@ a.uk-slidenav > * {
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   #site-wrapper #site-hero {
     background-image: url(../images/hero_01.png);
+    background-size: 600px;
+    background-position: 110% 30%;
+  }
+}
+
+@media (min-width: 1280px) {
+  #site-wrapper #site-hero {
+    background-size: 765px;
+    background-position: 115% 35%;
+  }
+}
+
+@media (min-width: 1680px) {
+  #site-wrapper #site-hero {
     background-size: 765px;
     background-position: 92% 35%;
   }
@@ -2756,90 +2770,27 @@ a.uk-slidenav > * {
   position: relative;
 }
 
-#site-wrapper .pr__hero__wrap .pr__header .logo-container {
-  position: absolute;
-  width: 320px;
-  left: 0;
-  top: 50%;
-  height: 45px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  margin: 0;
-  padding: 0;
-}
-
-@media (min-width: 567px) {
-  #site-wrapper .pr__hero__wrap .pr__header .logo-container {
-    height: 55px;
-    width: 400px;
-  }
-}
-
-@media (min-width: 768px) {
-  #site-wrapper .pr__hero__wrap .pr__header .logo-container {
-    width: 420px;
-  }
-}
-
-@media (min-width: 991px) {
-  #site-wrapper .pr__hero__wrap .pr__header .logo-container {
-    width: 650px;
-    height: 60px;
-  }
-}
-
-@media (min-width: 1280px) {
-  #site-wrapper .pr__hero__wrap .pr__header .logo-container {
-    width: 800px;
-    height: 65px;
-  }
-}
-
-@media (min-width: 1680px) {
-  #site-wrapper .pr__hero__wrap .pr__header .logo-container {
-    width: 800px;
-    height: 65px;
-  }
-}
-
-#site-wrapper .pr__hero__wrap .pr__header .logo-container::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  display: block;
-  background-image: url(../images/brand/ISF-weblogo-black-txt-800x56.svg);
-  background-position: -120px center;
-  background-size: contain;
+#site-wrapper .pr__hero__wrap .pr__header .logo {
+  background-image: url(../images/brand/ISF-weblogo-black-txt-572x56.svg);
   background-repeat: no-repeat;
-}
-
-@media (min-width: 567px) {
-  #site-wrapper .pr__hero__wrap .pr__header .logo-container::before {
-    background-position: -160px center;
-  }
+  background-size: contain;
+  background-position: center;
+  width: 250px;
 }
 
 @media (min-width: 768px) {
-  #site-wrapper .pr__hero__wrap .pr__header .logo-container::before {
-    background-position: -150px center;
-  }
-}
-
-@media (min-width: 991px) {
-  #site-wrapper .pr__hero__wrap .pr__header .logo-container::before {
-    background-position: -250px center;
+  #site-wrapper .pr__hero__wrap .pr__header .logo {
+    background-position: -10px center;
+    width: 250px;
+    height: 50px;
   }
 }
 
 @media (min-width: 1280px) {
-  #site-wrapper .pr__hero__wrap .pr__header .logo-container::before {
-    background-position: -200px center;
-  }
-}
-
-@media (min-width: 1680px) {
-  #site-wrapper .pr__hero__wrap .pr__header .logo-container::before {
-    background-position: -80px center;
+  #site-wrapper .pr__hero__wrap .pr__header .logo {
+    background-position: -30px center;
+    width: 300px;
+    height: 60px;
   }
 }
 
@@ -2859,6 +2810,11 @@ a.uk-slidenav > * {
   }
 }
 
+/* FEATURES SECTION */
+#pr_features .features-boxes .feature-box .link {
+  pointer-events: none;
+}
+
 /* SERVICES SECTION */
 #pr__services .services-boxes .service-box .link {
   pointer-events: none;
@@ -2867,8 +2823,8 @@ a.uk-slidenav > * {
 #pr__services .services-boxes .service-box .title {
   visibility: visible;
   top: initial;
-  -webkit-transition: top .2s ease-in-out, visibility .2s ease-in-out, opacity .2s ease-in-out;
-  transition: top .2s ease-in-out, visibility .2s ease-in-out, opacity .2s ease-in-out;
+  -webkit-transition: top 0.2s ease-in-out, visibility 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  transition: top 0.2s ease-in-out, visibility 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 #pr__services .services-boxes .service-box .service-box__description {
@@ -2884,8 +2840,8 @@ a.uk-slidenav > * {
   width: 100%;
   line-height: 110%;
   visibility: hidden;
-  -webkit-transition: bottom .3s ease-in-out;
-  transition: bottom .3s ease-in-out;
+  -webkit-transition: bottom 0.3s ease-in-out;
+  transition: bottom 0.3s ease-in-out;
 }
 
 #pr__services .services-boxes .service-box:hover .title {
@@ -2905,9 +2861,91 @@ a.uk-slidenav > * {
   opacity: 1;
 }
 
+/* REFERENCES SECTION */
+#pr__works .works-boxes .work-box:hover .image {
+  background-color: transparent !important;
+}
+
+#pr__works .works-boxes .work-box:hover .image img {
+  opacity: 0;
+}
+
+#pr__works .works-boxes .work-box:hover .image--bckgrnd {
+  opacity: .45;
+}
+
+#pr__works .works-boxes .work-box .image {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  position: relative;
+}
+
+#pr__works .works-boxes .work-box .image > img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  width: 200px;
+  opacity: 1;
+  -webkit-filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.25));
+  -webkit-transition: opacity .15s ease-in-out;
+  transition: opacity .15s ease-in-out;
+}
+
+#pr__works .works-boxes .work-box .inner span a {
+  display: block;
+  color: white;
+  font-weight: bold;
+  height: 32px;
+  width: 100%;
+  font-size: 24px;
+  margin-top: 12px;
+}
+
+#pr__works .works-boxes .work-box .image--bckgrnd {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  -webkit-filter: blur(2px) grayscale(1);
+          filter: blur(2px) grayscale(1);
+}
+
+#pr__works .works-boxes .work-box.work--helpitgo .image {
+  background-color: #ed0454;
+}
+
+#pr__works .works-boxes .work-box.work--santaroza .image {
+  background-color: #000;
+}
+
+#pr__works .works-boxes .work-box.work--kisfaludy .image {
+  background-color: #232323;
+}
+
+#pr__works .works-boxes .work-box.work--ivs .image {
+  background-color: #F3732A;
+}
+
 /* CLIENT TESTIMONIALS SECTION */
 #pr__clients .splide-clients .description {
   font-size: 19px;
+}
+
+#pr__clients .client-image {
+  display: none;
+}
+
+@media (min-width: 959px) {
+  #pr__clients .client-image {
+    display: block;
+  }
 }
 
 /* REFERENCE LOGOS SECTION */
@@ -2929,13 +2967,13 @@ a.uk-slidenav > * {
   width: 145px;
   height: auto;
   text-align: center;
-  opacity: .65;
+  opacity: 0.65;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
-  -webkit-transition: opacity .3s ease-in-out, -webkit-filter .3s ease-in-out;
-  transition: opacity .3s ease-in-out, -webkit-filter .3s ease-in-out;
-  transition: filter .3s ease-in-out, opacity .3s ease-in-out;
-  transition: filter .3s ease-in-out, opacity .3s ease-in-out, -webkit-filter .3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
+  transition: filter 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: filter 0.3s ease-in-out, opacity 0.3s ease-in-out, -webkit-filter 0.3s ease-in-out;
 }
 
 #competencies-section .splide-logos .splide__track .splide__list .splide__slide:hover {
@@ -2951,4 +2989,72 @@ a.uk-slidenav > * {
   max-height: 65px;
   max-width: 65px;
   margin: 0 auto;
+}
+
+/* FOOTER */
+#site-footer .uk-section-large {
+  padding-top: 105px;
+  padding-bottom: 105px;
+}
+
+@media (min-width: 1280px) {
+  #site-footer .uk-section-large .columns {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  #site-footer .uk-section-large .columns .column {
+    width: 33.33%;
+    padding: 0;
+  }
+}
+
+#site-footer .uk-section-large .columns .column .title {
+  text-align: center;
+}
+
+#site-footer .uk-section-large .columns .column.contact-column {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+@media (min-width: 959px) {
+  #site-footer .uk-section-large .columns .column.contact-column {
+    -webkit-box-ordinal-group: unset;
+        -ms-flex-order: unset;
+            order: unset;
+  }
+}
+
+@media (min-width: 1280px) {
+  #site-footer .uk-section-large .columns .column.contact-button .inner {
+    text-align: right;
+  }
+}
+
+#site-footer .uk-section-large .pr__social .inner {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#site-footer .uk-section-large .pr__social .inner .social__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#site-footer .uk-section-large .pr__social .inner .social__item:not(:first-of-type) {
+  margin-top: 12px;
+}
+
+#site-footer .uk-section-large .pr__social .inner .social__item span {
+  padding-left: 8px;
+  color: white;
 }

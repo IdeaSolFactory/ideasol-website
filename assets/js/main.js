@@ -133,6 +133,22 @@ jQuery(document).ready(function ($) {
         });
     }
 
+    // Features Slider Selector
+    // ------------------------------------------------------
+
+    // Adds and removes active class depending on which is selected
+    // Re-adds active class to nth of class instance
+   
+    $('.feature-box').hover(
+        function () {
+            $('.feature-box').removeClass("uk-active");
+            $(this).addClass("uk-active")
+        },
+        function () {
+            $(this).removeClass("uk-active");
+            $('.feature-box').eq(0).addClass("uk-active");
+        });
+
     // Splide slider options
     // ------------------------------------------------------
     new Splide('.splide-logos', {
@@ -147,8 +163,8 @@ jQuery(document).ready(function ($) {
         autoplay: true,
         gap: 15,
         width: "100%",
-        breakpoints:{
-            640:{
+        breakpoints: {
+            640: {
                 perPage: 3
             }
         }
@@ -166,5 +182,8 @@ jQuery(document).ready(function ($) {
         pauseOnHover: true,
         pauseOnFocus: true
     }).mount();
+
+
+   
 
 });
