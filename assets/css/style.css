@@ -2870,14 +2870,9 @@ a.uk-slidenav > * {
   opacity: 0;
 }
 
-#pr__works .works-boxes .work-box:hover .image--bckgrnd {
-  opacity: .45;
-}
-
 #pr__works .works-boxes .work-box .image {
-  -webkit-filter: grayscale(0);
-          filter: grayscale(0);
   position: relative;
+  background-color: #6b6a6a;
 }
 
 #pr__works .works-boxes .work-box .image > img {
@@ -2913,24 +2908,25 @@ a.uk-slidenav > * {
   width: 100%;
   height: 100%;
   z-index: -10;
-  -webkit-filter: blur(2px) grayscale(1);
-          filter: blur(2px) grayscale(1);
+  -webkit-filter: blur(2px) grayscale(0);
+          filter: blur(2px) grayscale(0);
 }
 
-#pr__works .works-boxes .work-box.work--helpitgo .image {
+#pr__works .works-boxes .work-box .image--bckgrnd > img {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+#pr__works .works-boxes .work-box.work--helpitgo .image--bckgrnd::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: #ed0454;
-}
-
-#pr__works .works-boxes .work-box.work--santaroza .image {
-  background-color: #000;
-}
-
-#pr__works .works-boxes .work-box.work--kisfaludy .image {
-  background-color: #232323;
-}
-
-#pr__works .works-boxes .work-box.work--ivs .image {
-  background-color: #F3732A;
+  opacity: .65;
 }
 
 /* CLIENT TESTIMONIALS SECTION */
