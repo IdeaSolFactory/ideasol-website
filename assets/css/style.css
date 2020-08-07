@@ -3115,6 +3115,10 @@ a.uk-slidenav > * {
   margin-top: 12px;
 }
 
+#site-footer .uk-section-large .pr__social .inner .social__item .icon.pr-envelope::before {
+  margin-top: -4px;
+}
+
 #site-footer .uk-section-large .pr__social .inner .social__item span {
   padding-left: 8px;
   color: white;
