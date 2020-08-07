@@ -2886,8 +2886,8 @@ a.uk-slidenav > * {
 
 #pr__works .works-boxes .work-box:hover .image--bckgrnd::after {
   height: 100%;
-  -webkit-transition: height .4s ease-in-out;
-  transition: height .4s ease-in-out;
+  -webkit-transition: height 0.4s ease-in-out;
+  transition: height 0.4s ease-in-out;
 }
 
 #pr__works .works-boxes .work-box .image {
@@ -2906,10 +2906,10 @@ a.uk-slidenav > * {
   opacity: 1;
   -webkit-filter: drop-shadow(0px 0px 8px rgba(29, 29, 31, 0.65));
           filter: drop-shadow(0px 0px 8px rgba(29, 29, 31, 0.65));
-  -webkit-transition: opacity .8s ease-in-out;
-  transition: opacity .8s ease-in-out;
-  -webkit-transition-delay: .5s;
-          transition-delay: .5s;
+  -webkit-transition: opacity 0.8s ease-in-out;
+  transition: opacity 0.8s ease-in-out;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
 }
 
 #pr__works .works-boxes .work-box .inner .image--bckgrnd {
@@ -2917,7 +2917,8 @@ a.uk-slidenav > * {
           transform: translate(0);
 }
 
-#pr__works .works-boxes .work-box .inner h3, #pr__works .works-boxes .work-box .inner p {
+#pr__works .works-boxes .work-box .inner h3,
+#pr__works .works-boxes .work-box .inner p {
   text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.65);
 }
 
@@ -2956,16 +2957,16 @@ a.uk-slidenav > * {
   left: 0;
   width: 100%;
   height: 0px;
-  -webkit-transition: height .8s ease-in-out;
-  transition: height .8s ease-in-out;
-  opacity: .75;
+  -webkit-transition: height 0.8s ease-in-out;
+  transition: height 0.8s ease-in-out;
+  opacity: 0.75;
 }
 
 #pr__works .works-boxes .work-box .image--bckgrnd > img {
   -webkit-filter: blur(2px) grayscale(100%) contrast(50%);
           filter: blur(2px) grayscale(100%) contrast(50%);
-  -webkit-transition: .8s ease-in-out;
-  transition: .8s ease-in-out;
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
   opacity: 0;
   -webkit-transition-delay: none;
           transition-delay: none;
@@ -2976,19 +2977,19 @@ a.uk-slidenav > * {
 }
 
 #pr__works .works-boxes .work-box.work--santaroza .image--bckgrnd::after {
-  background-color: #BF382B;
+  background-color: #bf382b;
 }
 
 #pr__works .works-boxes .work-box.work--kisfaludy .image--bckgrnd::after {
-  background-color: #EECF3B;
+  background-color: #eecf3b;
 }
 
 #pr__works .works-boxes .work-box.work--ivs .image--bckgrnd::after {
-  background-color: #F3732A;
+  background-color: #f3732a;
 }
 
 /* CLIENT TESTIMONIALS SECTION */
-#pr__clients .splide-clients .description {
+#pr__clients .description {
   font-size: 19px;
 }
 

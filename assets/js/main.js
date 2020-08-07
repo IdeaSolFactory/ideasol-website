@@ -170,18 +170,18 @@ jQuery(document).ready(function ($) {
         }
     }).mount();
 
-    new Splide('.splide-clients', {
-        type: "loop",
-        perPage: 1,
-        easing: "ease",
-        speed: 650,
-        pagination: false,
-        arrows: false,
-        autoplay: true,
-        width: "100%",
-        pauseOnHover: true,
-        pauseOnFocus: true
-    }).mount();
+    // new Splide('.splide-clients', {
+    //     type: "loop",
+    //     perPage: 1,
+    //     easing: "ease",
+    //     speed: 650,
+    //     pagination: false,
+    //     arrows: false,
+    //     autoplay: true,
+    //     width: "100%",
+    //     pauseOnHover: true,
+    //     pauseOnFocus: true
+    // }).mount();
 
 
    
