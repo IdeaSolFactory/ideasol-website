@@ -19,6 +19,13 @@
     }
 }
 
+/*BUTTONS*/
+.button{
+    &.uk-button.uk-button-default{
+        text-transform: none;
+    }
+}
+
 /*HERO SECTION*/
 
 #site-wrapper {

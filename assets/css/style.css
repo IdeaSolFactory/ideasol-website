@@ -2711,6 +2711,11 @@ a.uk-slidenav > * {
   }
 }
 
+/*BUTTONS*/
+.button.uk-button.uk-button-default {
+  text-transform: none;
+}
+
 /*HERO SECTION*/
 #site-wrapper #site-hero {
   background-image: none;
