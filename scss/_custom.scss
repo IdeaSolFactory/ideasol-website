@@ -26,8 +26,29 @@
     }
 }
 
+/*SINGLE PAGE*/
+.single{
+    #site-wrapper{
+
+        .pr__hero__wrap{
+            .pr__header{
+                .logo{
+                    background-image:url(../images/brand/ISF-weblogo-572x56.svg)
+                }
+            }
+        }
+
+        #site-hero{
+            &::before{
+                background-color:rgba(29, 29, 31, 0.75);
+            }
+        }
+    }
+}
+
 /*HERO SECTION*/
 
+// Main Site
 #site-wrapper {
     #site-hero {
         background-image: none;
