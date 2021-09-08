@@ -3006,6 +3006,10 @@ a.uk-slidenav > * {
   background-color: #eecf3b;
 }
 
+#pr__works .works-boxes .work-box.work--highsol .image--bckgrnd::after {
+  background-color: #59cfde;
+}
+
 #pr__works .works-boxes .work-box.work--ivs .image > img {
   width: 140px;
   height: 140px;
