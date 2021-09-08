@@ -2927,6 +2927,13 @@ a.uk-slidenav > * {
           transition-delay: 0.5s;
 }
 
+#pr__works .works-boxes .work-box .image .high-and-sol-img > img {
+
+  width: 200px;
+  height: 80px;
+
+}
+
 #pr__works .works-boxes .work-box .inner .image--bckgrnd {
   -webkit-transform: translate(0);
           transform: translate(0);
@@ -3136,4 +3143,9 @@ a.uk-slidenav > * {
 #site-footer .uk-section-large .pr__social .inner .social__item span {
   padding-left: 8px;
   color: white;
+}
+
+.high-and-sol-img{
+width:200px;
+height:80px;
 }
