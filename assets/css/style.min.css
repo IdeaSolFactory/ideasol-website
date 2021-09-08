@@ -7,3 +7,10 @@
     width:65px !important;
     height:65px !important;
     }
+
+    .pr-map-marker{
+        cursor: auto;
+    }
+    .pr-envelope{
+        cursor: auto;
+    }
