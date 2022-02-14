@@ -14,3 +14,5 @@
     .pr-envelope{
         cursor: auto;
     }
+
+.dc-image img{width:256px !important;height:256px !important;}
